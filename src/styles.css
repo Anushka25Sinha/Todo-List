@@ -1,0 +1,250 @@
+body {
+    background-image: url("./assets/container-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+  }
+  
+
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+    z-index: -1;
+  }
+  
+  .app {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  /* Header */
+  h1 {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+    position: absolute;
+    top: 10px;  
+    left: 10px; 
+    z-index: 10;
+  }
+  
+  /* Task List Container */
+  .todo-list {
+    background: white;
+    width: 92vw;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+    
+  /* Task Item */
+  .todo-item {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    width: 100%;
+  }
+    
+  .todo-item .completed {
+    text-decoration: line-through;
+    color: black;
+  }
+  
+  .todo-item input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  .task-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+  text-align: left;
+  margin-left: 10px;
+
+  }
+  .task-text{
+    font-size: 1rem;
+    color: black;
+  }
+  
+  /* Task Date Styling */
+  .task-date {
+    font-size: 0.8rem;
+    color: black;
+  }
+  
+  /* Add Task Form */
+  .todo-form {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    /* margin-top: 20px; */
+  }
+  
+  .todo-form input {
+    flex-grow: 1;
+    padding: 10px;
+    /* flex: 1; */
+    background: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .todo-form-date {
+    flex-shrink: 0;
+    padding: 10px 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .todo-form button {
+    flex-shrink: 0;
+    padding: 10px 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  /* Search & Filter Section */
+  .search-filter-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .search-filter-container input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .search-filter-container button {
+    padding: 10px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Three-Dot Menu */
+  .menu-container {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .menu-button {
+    background:rgb(38, 38, 38);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .dropdown-menu input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .dropdown-menu button {
+    padding: 8px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  /* Three-Dot Menu */
+.menu-container {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .menu-button {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .dropdown-menu input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .dropdown-menu button {
+    padding: 8px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+
+  
+  
+  
